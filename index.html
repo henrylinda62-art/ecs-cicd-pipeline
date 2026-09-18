@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devops / Cloud Engineer Resume</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #2980b9;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #ddd;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.4;
+            font-size: 13.5px;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            font-size: 26px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        header h2 {
+            font-size: 15px;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            font-size: 12px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            font-size: 14px;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+
+        p.summary {
+            font-size: 13px;
+            color: #444;
+            text-align: justify;
+        }
+
+        .job {
+            margin-bottom: 12px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 13.5px;
+            color: var(--primary-color);
+        }
+
+        .company {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        .job-date {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        ul {
+            margin-left: 18px;
+            margin-top: 4px;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 12.5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            font-size: 12.5px;
+        }
+
+        .skill-category strong {
+            color: var(--primary-color);
+        }
+
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: none;
+                font-size: 12px;
+            }
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+            }
+            @page {
+                size: letter;
+                margin: 0.5in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <!-- HEADER -->
+    <header>
+        <h1>Alex Morgan</h1>
+        <h2>Senior DevOps & Cloud Engineer</h2>
+        <div class="contact-info">
+            <span>San Francisco, CA</span>
+            <span>|</span>
+            <span>(555) 234-5678</span>
+            <span>|</span>
+            <span>alex.morgan.devops@email.com</span>
+            <span>|</span>
+            <a href="https://linkedin.com">linkedin.com/in/alex-morgan</a>
+            <span>|</span>
+            <a href="https://github.com">github.com/alexmorgan</a>
+        </div>
+    </header>
+
+    <!-- PROFESSIONAL SUMMARY -->
+    <section>
+        <h3>Professional Summary</h3>
+        <p class="summary">
+            Results-driven DevOps & Cloud Engineer with 6+ years of experience architecting, automating, and scaling robust cloud-native infrastructures. Proven track record in optimizing CI/CD pipelines, managing infrastructure-as-code (IaC) with Terraform, and orchestrating containerized workloads on AWS and Kubernetes. Adept at driving site reliability, decreasing deployment cycle times, and enforcing cloud security compliance.
+        </p>
+    </section>
+
+    <!-- TECHNICAL SKILLS -->
+    <section>
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <strong>Cloud & Infrastructure:</strong> AWS (ECS, EKS, EC2, VPC, RDS, IAM, S3, CloudFront), GCP
+            </div>
+            <div class="skill-category">
+                <strong>Containers & Orchestration:</strong> Docker, Kubernetes (EKS), Helm, AWS Fargate
+            </div>
+            <div class="skill-category">
+                <strong>IaC & Configuration:</strong> Terraform, Ansible, CloudFormation, Packer
+            </div>
+            <div class="skill-category">
+                <strong>CI/CD & Version Control:</strong> GitHub Actions, GitLab CI, Jenkins, ArgoCD, Git
+            </div>
+            <div class="skill-category">
+                <strong>Monitoring & Observability:</strong> Prometheus, Grafana, Datadog, ELK Stack, AWS CloudWatch
+            </div>
+            <div class="skill-category">
+                <strong>Scripting & Languages:</strong> Python, Bash, Go (Basic), YAML
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section>
+        <h3>Professional Experience</h3>
+
+        <!-- Job 1 -->
+        <div class="job">
+            <div class="job-header">
+                <div><span class="job-title">Senior DevOps Engineer</span> — <span class="company">CloudScale Solutions</span></div>
+                <div class="job-date">2023 – Present</div>
+            </div>
+            <ul>
+                <li>Architected and managed multi-region AWS environments using Terraform and Terragrunt, reducing infrastructure setup time by 60%.</li>
+                <li>Spearheaded the migration of legacy monolithic applications to containerized microservices running on Amazon EKS and AWS Fargate, auto-scaling efficiently under high-traffic workloads.</li>
+                <li>Designed advanced GitHub Actions and ArgoCD GitOps CI/CD pipelines, increasing deployment velocity from weekly releases to multiple production deployments per day.</li>
+                <li>Implemented comprehensive monitoring and alerting systems utilizing Prometheus, Grafana, and Datadog, reducing MTTR (Mean Time to Resolution) by 45%.</li>
+            </ul>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="job">
+            <div class="job-header">
+                <div><span class="job-title">DevOps Engineer</span> — <span class="company">Apex Tech Innovations</span></div>
+                <div class="job-date">2020 – 2023</div>
+            </div>
+            <ul>
+                <li>Maintained and optimized secure AWS infrastructure (VPC, IAM, Security Groups, ALB) adhering to CIS benchmarks and SOC2 compliance standards.</li>
+                <li>Automated configuration management and software provisioning across 100+ EC2 instances utilizing Ansible and Python scripts.</li>
+                <li>Engineered zero-downtime deployment pipelines using blue-green deployment strategies tied to Application Load Balancers (ALB) and ECS clusters.</li>
+                <li>Optimized AWS cloud expenditures through Reserved Instances, S3 lifecycle policies, and right-sizing workloads, achieving a 28% annual cost reduction.</li>
+            </ul>
+        </div>
+
+        <!-- Job 3 -->
+        <div class="job">
+            <div class="job-header">
+                <div><span class="job-title">Junior Systems / Cloud Administrator</span> — <span class="company">DataFlow Systems</span></div>
+                <div class="job-date">2018 – 2020</div>
+            </div>
+            <ul>
+                <li>Managed Linux (Ubuntu/RHEL) server environments, performing routine patch management, user access control, and system tuning.</li>
+                <li>Assisted in setting up initial Dockerized environments and writing foundational Dockerfiles for microservice deployment.</li>
+                <li>Collaborated with software development teams to troubleshoot build failures, network routing anomalies, and performance bottlenecks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & EDUCATION -->
+    <section>
+        <h3>Certifications & Education</h3>
+        <div class="job" style="margin-bottom: 6px;">
+            <div class="job-header">
+                <div><span class="job-title">AWS Certified Solutions Architect – Professional</span> | <span class="company">Amazon Web Services</span></div>
+                <div class="job-date">2022</div>
+            </div>
+        </div>
+        <div class="job" style="margin-bottom: 6px;">
+            <div class="job-header">
+                <div><span class="job-title">Certified Kubernetes Administrator (CKA)</span> | <span class="company">Cloud Native Computing Foundation (CNCF)</span></div>
+                <div class="job-date">2021</div>
+            </div>
+        </div>
+        <div class="education-item">
+            <div><strong>B.S. in Computer Science</strong> — University of California, Berkeley</div>
+            <div class="job-date">2014 – 2018</div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
